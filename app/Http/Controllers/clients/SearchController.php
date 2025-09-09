@@ -7,6 +7,7 @@ use App\Models\clients\Tours;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class SearchController extends Controller
 {
@@ -83,7 +84,7 @@ class SearchController extends Controller
         } catch (\Exception $e) {
             // Xử lý lỗi khi gọi API
             $resultTours = [];
-            \Log::error('Lỗi khi gọi API liên quan: ' . $e->getMessage());
+            Log::error('Lỗi khi gọi API liên quan: ' . $e->getMessage());
         }
 
         // dd($resultTours);
