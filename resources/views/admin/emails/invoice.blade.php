@@ -34,10 +34,10 @@
                     Đến
                     <address>
                         <strong>Công ty Travela</strong><br>
-                        470 Trần Đại Nghĩa<br>
-                        Ngũ Hành Sơn, Đà Nẵng<br>
+                        26 Tiên Sơn<br>
+                        Hải ChâuChâu, Đà Nẵng<br>
                         Phone: 1 (804) 123-9876<br>
-                        Email: minhdien.dev@gmail.com
+                        Email: huyuy1682@gmail.com
                     </address>
                 </div>
                 <br>

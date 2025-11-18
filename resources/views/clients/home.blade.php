@@ -11,9 +11,9 @@
             <div class="col-lg-12">
                 <div class="section-title text-white text-center counter-text-wrap mb-70" data-aos="fade-up"
                     data-aos-duration="1500" data-aos-offset="50">
-                    <h2>Khám phá kho báu việt nam cùng Travela</h2>
-                    <p>Website<span class="count-text plus" data-speed="3000" data-stop="24080">0</span>
-                        phổ biến nhất mà bạn sẽ nhớ</p>
+                    <h2>Khám phá làng nghề truyền thống việt nam cùng Travela</h2>
+                    {{-- <p>Website<span class="count-text plus" data-speed="3000" data-stop="24080">0</span>
+                        phổ biến nhất mà bạn sẽ nhớ</p> --}}
                 </div>
             </div>
         </div>
@@ -25,8 +25,8 @@
                         <div class="image">
                             <div class="ratting"><i class="fas fa-star"></i> {{ number_format($tour->rating, 1) }}</div>
                             <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                            <img src="{{ asset('admin/assets/images/gallery-tours/' . $tour->images[0] . '') }}"
-                                alt="Destination">
+                            <img src="{{ asset('admin/assets/images/gallery-tours/' . ($tour->images[0] ?? 'placeholder.jpg')) }}" alt="Tour List">
+                               
                         </div>
                         <div class="content">
                             <span class="location"><i class="fal fa-map-marker-alt"></i>{{ $tour->destination }}</span>
@@ -99,7 +99,7 @@
                             alt="Shape"></div>
                     <div class="shape"><img src="{{ asset('clients/assets/images/about/shape7.png') }}"
                             alt="Shape"></div>
-                    <img src="{{ asset('clients/assets/images/about/about.png') }}" alt="About">
+                    <img src="{{ asset('clients/assets/images/about/dathuy.jpg') }}" alt="About">
                 </div>
             </div>
         </div>
@@ -117,8 +117,8 @@
                     <div class="section-title text-center counter-text-wrap mb-70" data-aos="fade-up"
                         data-aos-duration="1500" data-aos-offset="50">
                         <h2>Khám phá các điểm đến phổ biến</h2>
-                        <p>Website <span class="count-text plus" data-speed="3000" data-stop="24080">0</span> trải
-                            nghiệm phổ biến nhất</p>
+                        {{-- <p>Website <span class="count-text plus" data-speed="3000" data-stop="24080">0</span> trải
+                            nghiệm phổ biến nhất</p> --}}
                     </div>
                 </div>
             </div>
@@ -137,8 +137,7 @@
                         <div class="destination-item style-two" data-aos-duration="1500" data-aos-offset="50">
                             <div class="image" style="max-height: 250px">
                                 <a href="#" class="heart"><i class="fas fa-heart"></i></a>
-                                <img src="{{ asset('admin/assets/images/gallery-tours/' . $tour->images[0]) }}"
-                                    alt="Destination">
+                                <img src="{{ asset('admin/assets/images/gallery-tours/' . ($tourDetail->images[0] ?? 'placeholder.jpg')) }}" alt="Destination">
                             </div>
                             <div class="content">
                                 <h6 class="tour-title"><a
@@ -242,7 +241,7 @@
         <div class="row">
             <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-offset="50">
                 <div class="cta-item"
-                    style="background-image: url( {{ asset('clients/assets/images/cta/cta1.jpg') }});">
+                    style="background-image: url( {{ asset('clients/assets/images/cta/anh1.jpg') }});">
                     <span class="category">Khám Phá Vẻ Đẹp Văn Hóa Việt</span>
                     <h2>Tìm hiểu những giá trị văn hóa độc đáo của các vùng miền Việt Nam.</h2>
                     <a href="{{ route('tours') }}" class="theme-btn style-two bgc-secondary">
@@ -254,9 +253,9 @@
             <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-delay="50" data-aos-duration="1500"
                 data-aos-offset="50">
                 <div class="cta-item"
-                    style="background-image: url( {{ asset('clients/assets/images/cta/cta2.jpg') }});">
-                    <span class="category">Bãi biển Sea</span>
-                    <h2>Bãi trong xanh dạt dào ở Việt Nam</h2>
+                    style="background-image: url( {{ asset('clients/assets/images/cta/anh2.jpg') }});">
+                    <span class="category">Làng nghề lịch sử</span>
+                    <h2>Làng nghề mang vẻ đẹp lịch sử Việt Nam</h2>
                     <a href="{{ route('tours') }}" class="theme-btn style-two">
                         <span data-hover="Khám phá">Khám phá</span>
                         <i class="fal fa-arrow-right"></i>
@@ -266,9 +265,9 @@
             <div class="col-xl-4 col-md-6" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1500"
                 data-aos-offset="50">
                 <div class="cta-item"
-                    style="background-image: url( {{ asset('clients/assets/images/cta/cta3.jpg') }});">
-                    <span class="category">Thác nước</span>
-                    <h2>Thác nước lớn nhất Việt Nam</h2>
+                    style="background-image: url( {{ asset('clients/assets/images/cta/anh3.jpeg') }});">
+                    <span class="category">Nghệ Nhân</span>
+                    <h2>Nghệ nhân nổi tiếng ở Việt Nam</h2>
                     <a href="{{ route('tours') }}" class="theme-btn style-two bgc-secondary">
                         <span data-hover="Khám phá">Khám phá</span>
                         <i class="fal fa-arrow-right"></i>

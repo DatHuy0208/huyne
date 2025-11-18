@@ -7,17 +7,19 @@
                 <div class="col-xl-5 col-lg-6" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
                     <div class="footer-widget footer-text">
                         <div class="footer-logo mb-25">
-                            <a href="index.html"><img src="{{ asset('clients/assets/images/logos/logo.png') }}"
-                                    alt="Logo"></a>
+                            <a href="{{ route('home') }}">
+                                <img src="{{ asset('clients/assets/images/logos/logo.png') }}" alt="Logo">
+                            </a>
                         </div>
-                        <p>Chúng tôi biên soạn các hành trình riêng biệt phù hợp với sở thích của bạn, đảm bảo mọi
-                            chuyến đi đều
-                            liền mạch và làm phong phú thêm những viên ngọc ẩn giấu</p>
+                        <p>
+                            Chúng tôi biên soạn các hành trình riêng biệt phù hợp với sở thích của bạn, đảm bảo mọi
+                            chuyến đi đều liền mạch và làm phong phú thêm những viên ngọc ẩn giấu.
+                        </p>
                         <div class="social-style-one mt-15">
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
-                            <a href="contact.html"><i class="fab fa-youtube"></i></a>
-                            <a href="contact.html"><i class="fab fa-pinterest"></i></a>
-                            <a href="contact.html"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/huydepchaizzz"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -100,9 +102,9 @@
                             <h5>Liên hệ</h5>
                         </div>
                         <ul class="list-style-one">
-                            <li><i class="fal fa-map-marked-alt"></i> 470 Tran Dai Nghia, Ngu Hanh Son, Da Nang</li>
+                            <li><i class="fal fa-map-marked-alt"></i> Tien Son 20 , Hai Chau, Da Nang</li>
                             <li><i class="fal fa-envelope"></i> <a
-                                    href="mailto:minhdien.dev@gmail.com">minhdien.dev@gmail.com</a></li>
+                                    href="mailto:dathuy.dev@gmail.com">dathuy.dev@gmail.com</a></li>
                             <li><i class="fal fa-clock"></i> Thứ 2 - Thứ 6, 08am - 05pm</li>
                             <li><i class="fal fa-phone-volume"></i> <a href="callto:+88012334588">+880 (123)
                                     345 88</a></li>

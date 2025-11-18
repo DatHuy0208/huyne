@@ -57,11 +57,11 @@
                                             <div class="col-sm-4 invoice-col">
                                                 Đến
                                                 <address>
-                                                    <strong>Công ty Travela</strong>
-                                                    <br>470 Trần Đại Nghĩa
-                                                    <br>Ngũ Hành Sơn, Đà Nẵng
+                                                    <strong>Công ty TravelGo</strong>
+                                                    <br>26 Tiên Sơn
+                                                    <br>Hải Châu, Đà Nẵng
                                                     <br>Phone: 1 (804) 123-9876
-                                                    <br>Email: minhdien.dev@gmail.com
+                                                    <br>Email: huyuy1682@gmail.com
                                                 </address>
                                             </div>
                                             <!-- /.col -->

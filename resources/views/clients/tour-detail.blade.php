@@ -23,28 +23,28 @@
         <div class="row gap-10 justify-content-center rel">
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="{{ asset('admin/assets/images/gallery-tours/' . $tourDetail->images[0] . '') }}"
-                        alt="Destination">
+                    <img src="{{ asset('admin/assets/images/gallery-tours/' . ($tourDetail->images[0] ?? 'placeholder.jpg')) }}" alt="Destination">
+                        
                 </div>
                 <div class="gallery-item">
-                    <img src="{{ asset('admin/assets/images/gallery-tours/' . $tourDetail->images[1] . '') }}"
-                        alt="Destination">
+                    <img src="{{ asset('admin/assets/images/gallery-tours/' . ($tourDetail->images[1] ?? 'placeholder.jpg')) }}" alt="Destination">
+                        
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item gallery-between">
-                    <img src="{{ asset('admin/assets/images/gallery-tours/' . $tourDetail->images[2] . '') }}"
-                        alt="Destination">
+                    <img src="{{ asset('admin/assets/images/gallery-tours/' . ($tourDetail->images[2] ?? 'placeholder.jpg')) }}" alt="Destination">
+                       
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="{{ asset('admin/assets/images/gallery-tours/' . $tourDetail->images[3] . '') }}"
-                        alt="Destination">
+                    <img src="{{ asset('admin/assets/images/gallery-tours/' . ($tourDetail->images[3] ?? 'placeholder.jpg')) }}" alt="Destination">
+                        
                 </div>
                 <div class="gallery-item">
-                    <img src="{{ asset('admin/assets/images/gallery-tours/' . $tourDetail->images[4] . '') }}"
-                        alt="Destination">
+                    <img src="{{ asset('admin/assets/images/gallery-tours/' . ($tourDetail->images[4] ?? 'placeholder.jpg')) }}" alt="Destination">
+                       
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
                                     <li><i class="far fa-check"></i> Dịch vụ đón và trả khách</li>
                                     <li><i class="far fa-check"></i> 1 bữa ăn mỗi ngày</li>
                                     <li><i class="far fa-check"></i> Bữa tối trên du thuyền & Sự kiện âm nhạc</li>
-                                    <li><i class="far fa-check"></i> Tham quan 7 địa điểm tuyệt vời nhất trong thành phố
+                                    <li><i class="far fa-check"></i> Tham quan địa điểm tuyệt vời nhất trong thành phố
                                     </li>
                                     <li><i class="far fa-check"></i> Nước đóng chai trên xe buýt</li>
                                     <li><i class="far fa-check"></i> Phương tiện di chuyển Xe buýt du lịch hạng sang
@@ -252,7 +252,7 @@
                         <h5 class="widget-title">Cần trợ giúp?</h5>
                         <ul class="list-style-one">
                             <li><i class="far fa-envelope"></i> <a
-                                    href="emilto:minhdien.dev@gmail.com">minhdien.dev@gmail.com</a></li>
+                                    href="emilto:huyuy1882@gmail.com">huyuy1882@gmail.com</a></li>
                             <li><i class="far fa-phone-volume"></i> <a href="callto:+000(123)45688">+000 (123) 456
                                     88</a></li>
                         </ul>
@@ -283,8 +283,7 @@
                                     </div>
                                 </div>
                             @endforeach
-                        </div>
-                    @endif
+                        </div> 
 
                 </div>
             </div>

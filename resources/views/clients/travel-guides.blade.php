@@ -62,15 +62,15 @@
         <div class="row justify-content-center">
             <div class="col-xl-3 col-lg-4 col-sm-6">
                 <div class="team-item hover-content" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
-                    <img src="{{ asset('clients/assets/images/team/guide-dien.jpg') }}" alt="Guide">
+                    <img src="{{ asset('clients/assets/images/team/dathuy.jpg') }}" alt="Guide">
                     <div class="content">
-                        <h6>DEV DIEN</h6>
+                        <h6>Huy QC</h6>
                         <span class="designation">Founder</span>
                         <div class="social-style-one inner-content">
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@dienne248"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/huydepchaizzz"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/huydepchaizzz"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/huydepchaizzz"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@huyuy1682"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -79,13 +79,13 @@
                 <div class="team-item hover-content" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
                     <img src="{{ asset('clients/assets/images/team/guide-ngan.jpg') }}" alt="Guide">
                     <div class="content">
-                        <h6>BAO NGAN</h6>
+                        <h6>Quang Minh</h6>
                         <span class="designation">Co-founder</span>
                         <div class="social-style-one inner-content">
                             <a href="contact.html"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/quang.minh.658967"><i class="fab fa-facebook-f"></i></a>
                             <a href="contact.html"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@dienne248"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@huyuy1682"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -94,13 +94,13 @@
                 <div class="team-item hover-content" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
                     <img src="{{ asset('clients/assets/images/team/guide1.jpg') }}" alt="Guide">
                     <div class="content">
-                        <h6>MINH TOAN</h6>
+                        <h6>Tiến Nam </h6>
                         <span class="designation">Travel Guide</span>
                         <div class="social-style-one inner-content">
                             <a href="contact.html"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/nguyentiennam230903"><i class="fab fa-facebook-f"></i></a>
                             <a href="contact.html"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@dienne248"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@huyuy1682"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -110,13 +110,13 @@
                     data-aos-offset="50">
                     <img src="{{ asset('clients/assets/images/team/guide2.jpg') }}" alt="Guide">
                     <div class="content">
-                        <h6>TRONG HAI</h6>
+                        <h6>Đình Hoài </h6>
                         <span class="designation">Senior Guide</span>
                         <div class="social-style-one inner-content">
                             <a href="contact.html"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/hoaidamsau"><i class="fab fa-facebook-f"></i></a>
                             <a href="contact.html"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@dienne248"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@huyuy1682"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -126,13 +126,13 @@
                     data-aos-duration="1500" data-aos-offset="50">
                     <img src="{{ asset('clients/assets/images/team/guide3.jpg') }}" alt="Guide">
                     <div class="content">
-                        <h6>NGOC THU</h6>
+                        <h6>Hoàng Vũ </h6>
                         <span class="designation">Travel Guide</span>
                         <div class="social-style-one inner-content">
                             <a href="contact.html"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/nguyen.hoang.vu.07022003"><i class="fab fa-facebook-f"></i></a>
                             <a href="contact.html"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@dienne248"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@huyuy1682"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -142,13 +142,13 @@
                     data-aos-duration="1500" data-aos-offset="50">
                     <img src="{{ asset('clients/assets/images/team/guide4.jpg') }}" alt="Guide">
                     <div class="content">
-                        <h6>DUC ANH</h6>
+                        <h6>Đức Anh </h6>
                         <span class="designation">Travel Guide</span>
                         <div class="social-style-one inner-content">
                             <a href="contact.html"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/nguyen.hoang.vu.07022003"><i class="fab fa-facebook-f"></i></a>
                             <a href="contact.html"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@dienne248"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@huyuy1682"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -158,13 +158,13 @@
                     data-aos-offset="50">
                     <img src="{{ asset('clients/assets/images/team/guide5.jpg') }}" alt="Guide">
                     <div class="content">
-                        <h6>THANH NHAN</h6>
+                        <h6>Tuấn Anh </h6>
                         <span class="designation">Co-founder</span>
                         <div class="social-style-one inner-content">
                             <a href="contact.html"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/nguyen.hoang.vu.07022003"><i class="fab fa-facebook-f"></i></a>
                             <a href="contact.html"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@dienne248"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@huyuy1682"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -174,13 +174,13 @@
                     data-aos-offset="50">
                     <img src="{{ asset('clients/assets/images/team/guide6.jpg') }}" alt="Guide">
                     <div class="content">
-                        <h6>CONG LAM</h6>
+                        <h6>Trọng Quốc </h6>
                         <span class="designation">Senior Guide</span>
                         <div class="social-style-one inner-content">
                             <a href="contact.html"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/dienne.dev"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/nguyen.hoang.vu.07022003"><i class="fab fa-facebook-f"></i></a>
                             <a href="contact.html"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/@dienne248"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.youtube.com/@huyuy1682"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>

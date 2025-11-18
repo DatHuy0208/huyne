@@ -4,7 +4,7 @@
         <h1 class="hero-title" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1500" data-aos-offset="50">
             Tours Du Lịch</h1>
         <div class="main-hero-image bgs-cover"
-            style="background-image: url({{ asset('clients/assets/images/hero/hero.jpg') }});">
+            style="background-image: url({{ asset('clients/assets/images/hero/1.jpg') }});">
         </div>
     </div>
     <form action="{{ route('search') }}" method="GET" id="search_form">
@@ -16,13 +16,13 @@
                     <select name="destination" id="destination">
                         <option value="">Chọn điểm đến</option>
                         <option value="dn">Đà Nẵng</option>
-                        <option value="cd">Côn Đảo</option>
+                        <option value="cd">Hội An</option>
                         <option value="hn">Hà Nội</option>
                         <option value="hcm">TP. Hồ Chí Minh</option>
                         <option value="hl">Hạ Long</option>
                         <option value="nb">Ninh Bình</option>
                         <option value="pq">Phú Quốc</option>
-                        <option value="dl">Đà Lạt</option>
+                        <option value="dl">Thái Bình</option>
                         <option value="qt">Quảng Trị</option>
                         <option value="kh">Khánh Hòa (Nha Trang)</option>
                         <option value="ct">Cần Thơ</option>
