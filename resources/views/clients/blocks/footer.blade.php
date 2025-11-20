@@ -127,7 +127,7 @@
     {{-- paypal-payment  --}}
     <script src="https://www.paypal.com/sdk/js?client-id={{ env('PAYPAL_SANDBOX_CLIENT_ID') }}"></script>
 
-    <!-- Custom script by Dev dien-->
+    <!-- Custom script by Dev -->
     <script src="{{asset('clients/assets/js/custom-js.js')}}"></script>
     <script src="{{asset('clients/assets/js/jquery.datetimepicker.full.min.js')}}"></script>
 

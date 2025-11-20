@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AdminManagementController;
 use App\Http\Controllers\admin\BookingManagementController;
 use App\Http\Controllers\admin\ContactManagementController;
@@ -7,7 +8,6 @@ use App\Http\Controllers\admin\DashboardController;
 use App\Http\Controllers\admin\LoginAdminController;
 use App\Http\Controllers\admin\ToursManagementController;
 use App\Http\Controllers\admin\UserManagementController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\clients\HomeController;
 use App\Http\Controllers\clients\AboutController;
 use App\Http\Controllers\clients\ServicesController;
@@ -24,6 +24,8 @@ use App\Http\Controllers\clients\MyTourController;
 use App\Http\Controllers\clients\PayPalController;
 use App\Http\Controllers\clients\SearchController;
 use App\Http\Controllers\clients\TourBookedController;
+use App\Http\Controllers\clients\ChatbotController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -95,6 +97,10 @@ Route::post('/reviews', [TourDetailController::class, 'reviews'])->name('reviews
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/create-contact', [ContactController::class, 'createContact'])->name('create-contact');
 
+// AI Chatbot - Tư vấn tour du lịch
+Route::get('/chatbot', [ChatbotController::class, 'index'])->name('chatbot');
+Route::post('/chatbot/message', [ChatbotController::class, 'message'])->middleware('throttle:20,1')->name('chatbot.message');
+
 
 //Search 
 Route::get('/search', [SearchController::class, 'index'])->name(name: 'search');
@@ -126,29 +132,33 @@ Route::prefix('admin')->middleware('admin')->group(function () {
     //Management Tours
     Route::get('/tours', [ToursManagementController::class, 'index'])->name('admin.tours');
 
-    Route::get('/page-add-tours', [ToursManagementController::class, 'pageAddTours'])->name('admin.page-add-tours');
-    Route::post('/add-tours', [ToursManagementController::class, 'addTours'])->name('admin.add-tours');
-    Route::post('/add-images-tours', [ToursManagementController::class, 'addImagesTours'])->name('admin.add-images-tours');
-    Route::post('/add-timeline', [ToursManagementController::class, 'addTimeline'])->name('admin.add-timeline');
+    Route::get('/page_add_tours', [ToursManagementController::class, 'pageAddTours'])->name('admin.page-add-tours');
+    Route::post('/add_tours', [ToursManagementController::class, 'addTours'])->name('admin.add-tours');
+    Route::post('/add_images_tours', [ToursManagementController::class, 'addImagesTours'])->name('admin.add-images-tours');
+    Route::post('/add_timeline', [ToursManagementController::class, 'addTimeline'])->name('admin.add-timeline');
 
-    Route::post('/delete-tour', [ToursManagementController::class, 'deleteTour'])->name('admin.delete-tour');
+    Route::post('/delete_tour', [ToursManagementController::class, 'deleteTour'])->name('admin.delete-tour');
 
-    Route::get('/tour-edit', [ToursManagementController::class, 'getTourEdit'])->name('admin.tour-edit');
-    Route::post('/edit-tour', [ToursManagementController::class, 'updateTour'])->name('admin.edit-tour');
-    Route::post('/add-temp-images', [ToursManagementController::class, 'uploadTempImagesTours'])->name('admin.add-temp-images');
+    Route::get('/tour_edit', [ToursManagementController::class, 'getTourEdit'])->name('admin.tour-edit');
+    Route::post('/edit_tour', [ToursManagementController::class, 'updateTour'])->name('admin.edit-tour');
+    Route::post('/add_temp_images', [ToursManagementController::class, 'uploadTempImagesTours'])->name('admin.add-temp-images');
 
     //Management Booking
     Route::get('/booking', [BookingManagementController::class, 'index'])->name('admin.booking');
-    Route::post('/confirm-booking', [BookingManagementController::class, 'confirmBooking'])->name('admin.confirm-booking');
-    Route::get('/booking-detail/{id?}', [BookingManagementController::class, 'showDetail'])->name('admin.booking-detail');
-    Route::post('/finish-booking', [BookingManagementController::class, 'finishBooking'])->name('admin.finish-booking');
-    Route::post('/received-money', [BookingManagementController::class, 'receiviedMoney'])->name('admin.received');
+    Route::post('/confirm_booking', [BookingManagementController::class, 'confirmBooking'])->name('admin.confirm-booking');
+    Route::get('/booking_detail/{id?}', [BookingManagementController::class, 'showDetail'])->name('admin.booking-detail');
+    Route::post('/finish_booking', [BookingManagementController::class, 'finishBooking'])->name('admin.finish-booking');
+    Route::post('/received_money', [BookingManagementController::class, 'receiviedMoney'])->name('admin.received');
 
     //Send mail pdf
-    Route::post('/admin/send-pdf', [BookingManagementController::class, 'sendPdf'])->name('admin.send.pdf');
+    Route::post('/admin/send_pdf', [BookingManagementController::class, 'sendPdf'])->name('admin.send.pdf');
 
     //Contact management
     Route::get('/contact', [ContactManagementController::class, 'index'])->name('admin.contact');
-    Route::post('/reply-contact', [ContactManagementController::class, 'replyContact'])->name('admin.reply-contact');
+    Route::post('/reply_contact', [ContactManagementController::class, 'replyContact'])->name('admin.reply-contact');
+    
+    // AI Chat
+    
+
 
 });

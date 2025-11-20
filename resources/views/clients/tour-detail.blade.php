@@ -1,3 +1,4 @@
+
 @include('clients.blocks.header')
 <section class="page-banner-two rel z-1">
     <div class="container-fluid">
@@ -283,8 +284,8 @@
                                     </div>
                                 </div>
                             @endforeach
-                        </div> 
-
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

@@ -12,6 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        //
+        // Temporary: exclude chatbot endpoints from CSRF for local testing
+        'chatbot/message',
+        'chatbot/*',
     ];
 }

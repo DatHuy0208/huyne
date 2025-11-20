@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
-    var sqlInjectionPattern = /[<>'"%;()&+]/;
+    // Định nghĩa pattern kiểm tra SQL injection
+    const sqlInjectionPattern = /(\bSELECT\b|\bINSERT\b|\bUPDATE\b|\bDELETE\b|\bDROP\b|\bCREATE\b|\bALTER\b|\bEXEC\b|\bUNION\b|--|;|\/\*|\*\/|xp_|sp_)/i;
 
     /****************************************
      *              PAGE LOGIN              *
@@ -27,28 +28,20 @@ $(document).ready(function () {
 
         var isValid = true;
 
-        // Kiểm tra độ dài mật khẩu
-        if (password.length < 6) {
-            isValid = false;
-            $("#validate_password")
-                .show()
-                .text("Mật khẩu phải có ít nhất 6 ký tự.");
-        }
-
-        // Kiểm tra tên đăng nhập và mật khẩu không chứa ký tự đặc biệt (SQL injection)
-        
-        if (sqlInjectionPattern.test(userName)) {
+        // Kiểm tra tên đăng nhập không trống
+        if (userName.length === 0) {
             isValid = false;
             $("#validate_username")
                 .show()
-                .text("Tên đăng nhập không được chứa ký tự đặc biệt.");
+                .text("Tên đăng nhập không được để trống.");
         }
 
-        if (sqlInjectionPattern.test(password)) {
+        // Kiểm tra độ dài mật khẩu
+        if (password.length === 0) {
             isValid = false;
             $("#validate_password")
                 .show()
-                .text("Mật khẩu không được chứa ký tự đặc biệt.");
+                .text("Mật khẩu không được để trống.");
         }
 
         if (isValid) {
@@ -98,12 +91,12 @@ $(document).ready(function () {
         // Kiểm tra lỗi
         var isValid = true;
 
-        // Kiểm tra tên đăng nhập không chứa ký tự SQL injection
-        if (sqlInjectionPattern.test(userName)) {
+        // Kiểm tra tên đăng nhập không trống
+        if (userName.length === 0) {
             isValid = false;
             $("#validate_username_regis")
                 .show()
-                .text("Tên tài khoản không được chứa ký tự đặc biệt.");
+                .text("Tên tài khoản không được để trống.");
         }
 
         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -112,18 +105,11 @@ $(document).ready(function () {
             $("#validate_email_regis").show().text("Email không hợp lệ.");
         }
 
-        if (password.length < 6) {
+        if (password.length === 0) {
             isValid = false;
             $("#validate_password_regis")
                 .show()
-                .text("Mật khẩu phải có ít nhất 6 ký tự.");
-        }
-
-        if (sqlInjectionPattern.test(password)) {
-            isValid = false;
-            $("#validate_password_regis")
-                .show()
-                .text("Mật khẩu không được chứa ký tự đặc biệt.");
+                .text("Mật khẩu không được để trống.");
         }
 
         // Kiểm tra nhập lại mật khẩu
